@@ -30,4 +30,33 @@ This project performs **real-time object detection** using a **custom-trained YO
 ```bash
 git clone https://github.com/your-username/yolov5-object-detection.git
 cd yolov5-object-detection
+```
+### 2. Install Dependencies
+
+Install the required dependencies by running:
+
+```bash
+pip install -r requirements.txt
+```
+### 3. Download or Place the YOLOv5 Model Weights
+Place your trained model file (last.pt) in the appropriate directory and update the path in the code if needed:
+
+```python
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='your/path/to/last.pt')
+```
+## You can train your own model using the official YOLOv5 repository.
+
+### 4.Run the Script
+You can run the code from a .py file or Jupyter Notebook:
+
+```python
+python filename.py
+```
+
+### Author
+S Mayur
+GitHub: @mayur170804
+
+
+
 
